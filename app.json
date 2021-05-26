@@ -5,6 +5,9 @@
   "repository": "https://github.com/cancinconntg/vc_bot",
   "stack": "container",
   "env": {
+    "SESSION_NAME": {
+      "description": "Pyrogram oturum dizesi",
+      "required": true
     },
     "BOT_TOKEN": {
       "description": "Bot Token @BotFather",
@@ -14,6 +17,23 @@
       "description": "MusicPlayer Bot Adınız.",
       "required": false,
       "value": "Saygısızlar Müzik Bot"
+    },
+    "API_ID": {
+      "description": "App ID my.telegram.org/apps",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "App hash my.telegram.org/apps",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "Yönetici ID listesi.",
+      "required": true
+    },
+    "DURATION_LIMIT": {
+      "description": "İndirmeler için maksimum ses süresi sınırı (dakika).",
+      "required": true,
+      "value": "10"
     }
   }
 }
