@@ -8,8 +8,8 @@ from helpers.filters import other_filters2
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""Hoşgeldin **Ben Netd Music 📀** Grubunuzda Şarkı Arayabilirim Stabil Çalışmam İçin Bana Herhangi Bir Yetki Verin 👁 
- Kullanım Şekli : **/e < şarkı adı>** Örnek : /e suspus
+        f"""Ben **{bn}** 📀
+🎭 Kullanım : /e <Şarkı Adı> Örnek : /e Suspus
         """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -19,7 +19,7 @@ async def start(_, message: Message):
                     ),
                     InlineKeyboardButton(
                         "Kanal 📣", url="https://t.me/joinchat/wtm0R29rTIUyYzFk"
-                        )
+                    )
                 ]
             ]
         )
