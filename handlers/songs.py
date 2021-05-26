@@ -11,14 +11,14 @@ from config import BOT_NAME as Bn
 from helpers.filters import command, other_filters
 from helpers.decorators import errors
 
-@Client.on_message(command("bul") & other_filters)
+@Client.on_message(command("e") & other_filters)
 @errors
 async def a(client, message: Message):
     query = ''
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = await message.reply(f"**{Bn} :-** 🔍 Aranıyor {query}")
+    m = await message.reply(f"👨🏽‍💻 **Arıyorum :** {query}")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -55,13 +55,13 @@ async def a(client, message: Message):
         )
         print(str(e))
         return
-    await m.edit(f"**{Bn} :-** 📥 Indiriyor...\n**Query :-** {query}")
+    await m.edit(f"🦸🏾 İndiriyorum... **Aranan :** {query}")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🎶 **Başlık:** [{title[:35]}]({link})\n⏳ **Süre:** {duration}\n👀 **Görünümler:** {views}'
+        rep = f'♥️ @NetdMusicBot 🎶'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
