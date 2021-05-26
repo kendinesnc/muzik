@@ -18,7 +18,7 @@ async def start(_, message: Message):
                         "Sahibi 💬", url="https://t.me/Azerbesk"
                     ),
                     InlineKeyboardButton(
-                        "Kanal 📣", url="https://t.me/KaybedenlerOrkestrasi"
+                        "Kanal 📣", url="https://t.me/joinchat/wtm0R29rTIUyYzFk"
                         )
                 ]
             ]
