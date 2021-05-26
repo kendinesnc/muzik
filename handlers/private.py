@@ -9,7 +9,7 @@ from helpers.filters import other_filters2
 async def start(_, message: Message):
     await message.reply_text(
         f"""Ben **{bn}** !!
-⚜️ Komutlar : /bul <Şarkı Adı>
+⚜️ Komutlar : /e <Şarkı Adı>
         """,
         reply_markup=InlineKeyboardMarkup(
             [
