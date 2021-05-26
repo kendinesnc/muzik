@@ -19,6 +19,8 @@ async def start(_, message: Message):
                     ),
                     InlineKeyboardButton(
                         "Kanal 📣", url="https://t.me/KaybedenlerOrkestrasi"
-                    )
+                        )
                 ]
             ]
+        )
+    )
