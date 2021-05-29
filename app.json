@@ -5,10 +5,6 @@
   "repository": "https://github.com/cancinconntg/vc_bot",
   "stack": "container",
   "env": {
-    "SESSION_NAME": {
-      "description": "Pyrogram oturum dizesi",
-      "required": true
-    },
     "BOT_TOKEN": {
       "description": "Bot Token @BotFather",
       "required": true
